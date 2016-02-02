@@ -3,4 +3,7 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
+    <string name="prompt1">Ten Question Flag Quizzz</string>
+    <string name="prompt2">Question 1 of 10</string>
 </resources>

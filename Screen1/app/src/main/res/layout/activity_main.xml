@@ -3,26 +3,30 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#fffdce">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ten Question Flag Quiz"
+        android:text="@string/prompt1"
         android:id="@+id/title"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
+        android:textColor="@style/promptColor"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Question 1 of 10"
+        android:text="@string/prompt2"
         android:id="@+id/question"
         android:layout_below="@+id/title"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@style/promptColor"
+        />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -39,67 +43,80 @@
         android:text="Guess the Country"
         android:id="@+id/guess"
         android:layout_below="@+id/flag"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@style/promptColor" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Puerto Rico"
-        android:id="@+id/button"
-        android:layout_below="@+id/guess"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Grenada"
-        android:id="@+id/button2"
+        android:id="@+id/button_1_C"
         android:layout_below="@+id/guess"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@style/promptColor"
+       />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puerto Rico"
+        android:id="@+id/button_1_L"
+        android:layout_below="@+id/guess"
+        android:layout_toLeftOf="@+id/button_1_C"
+        android:textColor="@style/promptColor" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nicaragua"
-        android:id="@+id/button3"
+        android:id="@+id/button_1_R"
         android:layout_below="@+id/guess"
-        android:layout_alignRight="@+id/flag"
-        android:layout_alignEnd="@+id/flag" />
+        android:layout_toRightOf="@+id/button_1_C"
+        android:textColor="@style/promptColor" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bahamas"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Guatemala"
-        android:id="@+id/button5"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:id="@+id/button_2_C"
+        android:layout_below="@+id/button_1_C"
+        android:layout_centerHorizontal="true"
+        android:textColor="@style/promptColor" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bahamas"
+        android:id="@+id/button_2_L"
+        android:layout_below="@+id/button_1_C"
+        android:layout_toLeftOf="@+id/button_2_C"
+        android:textColor="@style/promptColor" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aruba"
-        android:id="@+id/button6"
-        android:layout_below="@+id/button2"
-        android:layout_alignRight="@+id/button3"
-        android:layout_alignEnd="@+id/button3" />
+        android:id="@+id/button_2_R"
+        android:layout_below="@+id/button_1_C"
+        android:layout_toRightOf="@+id/button_2_C"
+        android:textColor="@style/promptColor" />
+
+
+
+
 
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="Select Number Of Choices"
         android:id="@+id/button7"
-        android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/button_2_C"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#000000" />
 
     <Button
         android:layout_width="fill_parent"
@@ -107,7 +124,9 @@
         android:text="Select Regions"
         android:id="@+id/button8"
         android:layout_below="@+id/button7"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:background="#f5da20" />
 
 
 </RelativeLayout>
